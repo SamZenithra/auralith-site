@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy — Zenithra by Auralith</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#0F0E2A;
+  --surface:rgba(255,255,255,0.05);
+  --surface2:rgba(255,255,255,0.08);
+  --blue:#4F46E5;--purple:#7C3AED;
+  --accent:#FF7A00;
+  --text:#F1F5F9;--muted:#94A3B8;
+  --border:rgba(79,70,229,0.2);
+  --radius:16px;
+}
+body{
+  font-family:'Nunito',sans-serif;
+  background:linear-gradient(160deg,#0F0E2A 0%,#1A1040 50%,#0F1B35 100%);
+  min-height:100vh;
+  color:var(--text);
+  line-height:1.7;
+}
+
+/* HEADER */
+header{
+  padding:24px 32px;
+  border-bottom:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:rgba(15,14,42,0.9);
+  backdrop-filter:blur(20px);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.logo{
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  background:linear-gradient(135deg,#4F46E5,#7C3AED);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-decoration:none;
+}
+.back-btn{
+  color:var(--muted);
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  transition:color .2s;
+}
+.back-btn:hover{color:var(--text);}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:60px 24px 40px;
+  position:relative;
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  top:0;left:50%;
+  transform:translateX(-50%);
+  width:600px;height:300px;
+  background:radial-gradient(ellipse,rgba(79,70,229,0.15) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-badge{
+  display:inline-block;
+  background:rgba(79,70,229,0.15);
+  border:1px solid rgba(79,70,229,0.3);
+  color:#A5B4FC;
+  font-size:12px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  padding:6px 16px;
+  border-radius:100px;
+  margin-bottom:20px;
+}
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(32px,5vw,52px);
+  font-weight:600;
+  margin-bottom:12px;
+  background:linear-gradient(135deg,#fff 0%,#A5B4FC 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p{
+  color:var(--muted);
+  font-size:15px;
+  max-width:500px;
+  margin:0 auto;
+}
+.updated-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(255,122,0,0.1);
+  border:1px solid rgba(255,122,0,0.2);
+  color:#FDA172;
+  font-size:12px;
+  font-weight:600;
+  padding:6px 14px;
+  border-radius:100px;
+  margin-top:16px;
+}
+
+/* CONTENT */
+.container{
+  max-width:780px;
+  margin:0 auto;
+  padding:40px 24px 80px;
+}
+.section{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:32px;
+  margin-bottom:20px;
+  transition:background .2s;
+}
+.section:hover{background:var(--surface2);}
+.section-number{
+  font-size:11px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:#4F46E5;
+  margin-bottom:8px;
+}
+.section h2{
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  font-weight:500;
+  color:#fff;
+  margin-bottom:16px;
+}
+.section p{
+  color:var(--muted);
+  font-size:15px;
+  margin-bottom:12px;
+}
+.section p:last-child{margin-bottom:0;}
+ul{
+  list-style:none;
+  padding:0;
+  margin:12px 0;
+}
+ul li{
+  color:var(--muted);
+  font-size:15px;
+  padding:6px 0 6px 24px;
+  position:relative;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+ul li:last-child{border-bottom:none;}
+ul li::before{
+  content:'›';
+  position:absolute;
+  left:6px;
+  color:#4F46E5;
+  font-weight:700;
+}
+strong{color:var(--text);}
+a{color:#A5B4FC;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.highlight-box{
+  background:rgba(79,70,229,0.1);
+  border:1px solid rgba(79,70,229,0.25);
+  border-radius:12px;
+  padding:16px 20px;
+  margin:16px 0;
+  color:#C7D2FE;
+  font-size:14px;
+}
+
+/* CONTACT */
+.contact-card{
+  background:linear-gradient(135deg,rgba(79,70,229,0.2),rgba(124,58,237,0.2));
+  border:1px solid rgba(79,70,229,0.3);
+  border-radius:var(--radius);
+  padding:32px;
+  text-align:center;
+  margin-top:32px;
+}
+.contact-card h3{
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  color:#fff;
+  margin-bottom:8px;
+}
+.contact-card p{color:var(--muted);font-size:14px;margin-bottom:20px;}
+.contact-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#FF7A00,#FF9A3C);
+  color:#fff;
+  font-family:'Nunito',sans-serif;
+  font-weight:700;
+  font-size:14px;
+  padding:12px 28px;
+  border-radius:100px;
+  text-decoration:none;
+  box-shadow:0 4px 16px rgba(255,122,0,0.3);
+  transition:transform .2s,box-shadow .2s;
+}
+.contact-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,122,0,0.4);text-decoration:none;}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:32px 24px;
+  color:var(--muted);
+  font-size:13px;
+  border-top:1px solid var(--border);
+}
+footer span{color:#4F46E5;font-weight:700;}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="https://www.auralith.uk" class="logo">Zenithra</a>
+  <a href="https://app.auralith.uk" class="back-btn">← Back to App</a>
+</header>
+
+<div class="hero">
+  <div class="hero-badge">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p>How Auralith collects, uses and protects your personal data when you use Zenithra.</p>
+  <div class="updated-badge">🗓 Last updated: March 2026 · Auralith, United Kingdom</div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <div class="section-number">Section 01</div>
+    <h2>Who We Are</h2>
+    <p>Auralith ("we", "our", "us") is a digital wellness company based in the United Kingdom, operating the website auralith.uk and the Zenithra web application at app.auralith.uk.</p>
+    <p>We are committed to protecting your personal data in accordance with the <strong>UK General Data Protection Regulation (UK GDPR)</strong> and the <strong>Data Protection Act 2018</strong>.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 02</div>
+    <h2>Data We Collect</h2>
+    <p>We may collect and process the following categories of personal data:</p>
+    <ul>
+      <li><strong>Account Data:</strong> name and email address when you register for Zenithra</li>
+      <li><strong>Health & Wellness Data:</strong> fasting logs, weight entries, task records, mood logs, habit data and activity data you voluntarily enter into the app — stored securely in our cloud database</li>
+      <li><strong>Usage Data:</strong> pages visited, time spent, device type and browser information collected automatically</li>
+      <li><strong>Communications:</strong> email address when contacting us or signing up for notifications</li>
+      <li><strong>Payment Data:</strong> payment is processed securely by Stripe — we never store your card details on our servers</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 03</div>
+    <h2>How We Use Your Data</h2>
+    <ul>
+      <li>To provide and personalise the Zenithra app experience</li>
+      <li>To calculate your Life Score, calorie targets and health insights</li>
+      <li>To send trial reminder emails and important account notifications</li>
+      <li>To process subscription payments via Stripe</li>
+      <li>To improve our services and fix technical issues</li>
+      <li>To comply with legal obligations</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 04</div>
+    <h2>Data Storage & Security</h2>
+    <p>Your data is stored securely using <strong>Supabase</strong>, a cloud database provider with enterprise-grade security. All data is encrypted in transit (HTTPS) and at rest.</p>
+    <div class="highlight-box">🔒 We never sell your personal data to third parties. Your health and wellness data is private and used only to power your personal Zenithra experience.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 05</div>
+    <h2>Third-Party Services</h2>
+    <p>Zenithra uses the following third-party services:</p>
+    <ul>
+      <li><strong>Supabase</strong> — secure cloud database and authentication</li>
+      <li><strong>Stripe</strong> — payment processing (PCI-DSS compliant)</li>
+      <li><strong>Netlify</strong> — app hosting and delivery</li>
+      <li><strong>Resend</strong> — transactional email delivery</li>
+    </ul>
+    <p>Each provider has their own privacy policy and data protection commitments.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 06</div>
+    <h2>Your Rights</h2>
+    <p>Under UK GDPR, you have the following rights:</p>
+    <ul>
+      <li><strong>Right to access</strong> — request a copy of your personal data</li>
+      <li><strong>Right to rectification</strong> — correct inaccurate data</li>
+      <li><strong>Right to erasure</strong> — request deletion of your data</li>
+      <li><strong>Right to portability</strong> — receive your data in a portable format</li>
+      <li><strong>Right to object</strong> — object to processing of your data</li>
+      <li><strong>Right to withdraw consent</strong> — at any time, without affecting prior processing</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 07</div>
+    <h2>Data Retention</h2>
+    <p>We retain your personal data for as long as your account is active. If you cancel your subscription and request account deletion, we will delete your data within <strong>30 days</strong>.</p>
+    <p>Some data may be retained longer where required by law or for legitimate business purposes such as fraud prevention.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 08</div>
+    <h2>Children's Privacy</h2>
+    <p>Zenithra is intended for users aged <strong>18 and over</strong>. We do not knowingly collect personal data from children under 18. If you believe a child has provided us with personal data, please contact us immediately.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 09</div>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by email or via an in-app notification. The "Last updated" date at the top of this page will always reflect the most recent version.</p>
+  </div>
+
+  <div class="contact-card">
+    <h3>Questions about your privacy?</h3>
+    <p>We're happy to help. Get in touch with our team directly.</p>
+    <a href="mailto:support@auralith.uk" class="contact-btn">✉️ Contact Us</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 <span>Auralith</span> · Zenithra · United Kingdom · <a href="https://app.auralith.uk">app.aural
